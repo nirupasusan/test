@@ -1,0 +1,12 @@
+<html>
+<head>
+</head>
+<body>
+Enter Name 
+
+<label th:if="${#fields.hasErrors('name')}" th:errors="*{name}"
+								class="validation-message"></label>
+						<input type="text" th:field="*{name}" placeholder="Name"
+								class="form-control" /> 
+</body>
+</html>
